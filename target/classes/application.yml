@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+security:
+  oauth2:
+    client:
+      clientId: 1qdimabplv8bg2aurf19gdccjc
+      clientSecret: 3ohmqjipmep1hl8ikpm9qp76u52ch3piljbammj85db691knodl
+      accessTokenUri: https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/token
+      userAuthorizationUri:  https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/authorize
+      tokenName: access_token
+      authenticationScheme: header
+      clientAuthenticationScheme: header
+    resource:
+      userInfoUri: https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/userInfo
