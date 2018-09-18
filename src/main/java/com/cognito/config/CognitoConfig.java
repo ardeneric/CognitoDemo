@@ -1,13 +1,16 @@
 package com.cognito.config;
 
-import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 
 @Configuration
-@EnableOAuth2Sso
+//@EnableOAuth2Sso
+//@EnableOAuth2Client
+@EnableResourceServer
 public class CognitoConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
@@ -15,6 +18,7 @@ public class CognitoConfig extends WebSecurityConfigurerAdapter {
 		http
 		.csrf().disable()
 		.authorizeRequests()
+		.antMatchers("/oauth2/**").permitAll()
         .anyRequest().authenticated()
         .and()
         .httpBasic().disable();
