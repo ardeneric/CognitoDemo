@@ -4,10 +4,10 @@ server:
 security:
   oauth2:
     client:
-      clientId: 1qdimabplv8bg2aurf19gdccjc
-      clientSecret: 3ohmqjipmep1hl8ikpm9qp76u52ch3piljbammj85db691knodl
-      accessTokenUri: https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/token
-      userAuthorizationUri:  https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/authorize
+      clientId: 3ijui517bfu90b9tit52tdgtr2
+      clientSecret: dsh9ir8j111t9mukdq9lu929ffkae335e2hrmj8svhrrqb2uv8a
+      accessTokenUri: https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/token
+      userAuthorizationUri:  https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/authorize
       tokenName: Authorization
       authenticationScheme: header
       clientAuthenticationScheme: header
@@ -15,5 +15,5 @@ security:
       authorized-grant-types:
         authorization_code
     resource:
-      userInfoUri: https://changodemo.auth.eu-west-1.amazoncognito.com/oauth2/userInfo
+      userInfoUri: https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/userInfo
       #preferTokenInfo: false
