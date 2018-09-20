@@ -4,10 +4,10 @@ server:
 security:
   oauth2:
     client:
-      clientId: 3ijui517bfu90b9tit52tdgtr2
+      clientId: 5nh37m2svn18td5kovo0bksfte
       clientSecret: dsh9ir8j111t9mukdq9lu929ffkae335e2hrmj8svhrrqb2uv8a
-      accessTokenUri: https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/token
-      userAuthorizationUri:  https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/authorize
+      accessTokenUri: https://cogtest.auth.eu-west-1.amazoncognito.com/oauth2/token
+      userAuthorizationUri:  https://cogtest.auth.eu-west-1.amazoncognito.com/oauth2/authorize
       tokenName: Authorization
       authenticationScheme: header
       clientAuthenticationScheme: header
@@ -15,5 +15,5 @@ security:
       authorized-grant-types:
         authorization_code
     resource:
-      userInfoUri: https://BlaQ.auth.eu-west-1.amazoncognito.com/oauth2/userInfo
+      userInfoUri: https://cogtest.auth.eu-west-1.amazoncognito.com/oauth2/userInfo
       #preferTokenInfo: false
